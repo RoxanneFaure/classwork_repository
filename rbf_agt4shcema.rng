@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0"
+    xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"
+    datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
+    <start>
+        <ref name="element.corpus"/>
+    </start>
+    <define name="element.corpus">
+        <element name="corpus">
+            <ref name="element.header"/>
+            <ref name="element.body"/>
+        </element>
+    </define>
+    <define name="element.header">
+        <element name="header">
+            <ref name="model.mixed_content"/>
+        </element>
+    </define>
+    <define name="model.mixed_content">
+        <oneOrMore>
+            <choice>
+                <text/>
+                <ref name="element.emph"/>
+                <ref name="element.hi"/>
+                <ref name="element.title"/>
+                <ref name="element.name"/>
+                <ref name="element.p"/>
+                <ref name="element.pb"/>
+                <ref name="element.abbr"/>
+                <ref name="element.foreign"/>
+                <ref name="element.date"/>
+            </choice>
+        </oneOrMore>
+    </define>
+    <define name="element.body">
+        <element name="body">
+            <ref name="model.mixed_content"/>
+            <zeroOrMore>
+                <ref name="element.list"/>
+            </zeroOrMore>
+        </element>
+    </define>
+    <define name="element.title">
+        <element name="title">
+            <text/>
+        </element>
+    </define>
+    <define name="element.emph">
+        <element name="emph">
+            <text/>
+        </element>
+    </define>
+    <define name="element.hi">
+        <element name="hi">
+            <text/>
+        </element>
+    </define>
+    <define name="element.pb">
+        <element name="pb">
+            <attribute name="given.page.number"/>
+            <zeroOrMore>
+                <attribute name="page.header">
+                    <text/>
+                </attribute>
+            </zeroOrMore>
+            <zeroOrMore>
+                <text/>
+            </zeroOrMore>
+        </element>
+    </define>
+    <define name="element.p">
+        <element name="p">
+            <ref name="model.mixed_content"/>
+            <zeroOrMore>
+                <ref name="element.name"/>
+            </zeroOrMore>
+        </element>
+    </define>
+    <define name="element.name">
+        <element name="name">
+            <zeroOrMore>
+                <attribute name="type">
+                    <choice>
+                        <value>first name</value>
+                        <value>surname</value>
+                        <value>alias</value>
+                        <value>enslaved name</value>
+                        <value>chosen name</value>
+                    </choice>
+                </attribute>
+            </zeroOrMore>
+            <optional>
+                <attribute name="target">
+                    <text/>
+                </attribute>
+            </optional>
+            <optional>
+                <attribute name="xml:id">
+                    <data type="ID"/>
+                </attribute>
+            </optional>
+            <text/>
+        </element>
+    </define>
+    <define name="element.date">
+        <element name="date">
+            <text/>
+            <zeroOrMore>
+                <attribute name="when">
+                    <text/>
+                </attribute>
+            </zeroOrMore>
+        </element>
+    </define>
+    <define name="element.abbr">
+        <element name="abbr">
+            <text/>
+            <zeroOrMore>
+                <attribute name="full">
+                    <text/>
+                </attribute>
+            </zeroOrMore>
+        </element>
+    </define>
+    <define name="element.back">
+        <element name="back">
+            <text/>
+            <zeroOrMore>
+                <ref name="element.note"/>
+            </zeroOrMore>
+        </element>
+    </define>
+    <define name="element.foreign">
+        <element name="foreign">
+            <text/>
+            <attribute name="lang">
+                <choice>
+                    <value>en</value>
+                    <value>fr</value>
+                    <value>la</value>
+                    <value>es</value>
+                    <value>unknown</value>
+                </choice>
+            </attribute>
+        </element>
+    </define>
+    <define name="element.list">
+        <element name="list">
+            <oneOrMore>
+                <ref name="element.item"/>
+            </oneOrMore>
+        </element>
+    </define>
+    <define name="element.item">
+        <element name="item">
+            <text/>
+            <attribute name="n">
+                <data type="nonNegativeInteger"/>
+            </attribute>
+        </element>
+    </define>
+    <define name="element.note">
+        <element name="note">
+            <text/>
+        </element>
+    </define>
+    <define name="element.front">
+        <element name="front">
+            <text/>
+        </element>
+    </define>
+    <define name="element.subheading">
+        <element name="subheading">
+            <text/>
+        </element>
+    </define>
+</grammar>
