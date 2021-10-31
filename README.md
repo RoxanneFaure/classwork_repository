@@ -1,3 +1,2 @@
 # test_repository
-Trying out the system; here you may find notes, test files, etc.
-This line added from the desktop, not on web
+This is where my work for Introduction to Digital Humanities lives! Here you will find encoded material from the Colored Conventions Project, with a special focus on documents by and about Black women in the Colored Conventions.
