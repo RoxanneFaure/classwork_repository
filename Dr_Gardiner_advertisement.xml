@@ -2,8 +2,10 @@
 <?xml-model href="file:/C:/Users/Geoff/OneDrive/Documents/Roxanne%27s%20Stuff/test_repository/rbfaure_agt4_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <document>
     <CCPheader>
-        <title>newspaper advertisement for Dr. Gardiner, partial</title>
+        <author>unknown, likely Dr. Gardiner</author>
+        <title>newspaper advertisement for Dr. Peter Gardiner, partial</title>
         <date>unknown, some time before April 1835</date>
+        <exhibit>Black Women's Economic Power: Viualizing Domestic Spaces in the 1830s</exhibit>
     </CCPheader>
     <body><name>Dr. Gardiner</name>, <location type="address">No. 19, Powel-street, between 5th and
             6th streets, and between Pine &amp; Spruce</location>, <location type="city"

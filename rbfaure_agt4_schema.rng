@@ -17,20 +17,6 @@
             <ref name="model.mixed_content"/>
         </element>
     </define>
-    <define name="model.mixed_content">
-        <oneOrMore>
-            <choice>
-                <text/>
-                <ref name="element.emph"/>
-                <ref name="element.hi"/>
-                <ref name="element.abbr"/>
-                <ref name="element.foreign"/>
-                <ref name="element.date"/>
-                <ref name="element.list"/>
-                <ref name="element.title"/>
-            </choice>
-        </oneOrMore>
-    </define>
     <define name="element.body">
         <element name="body">
             <zeroOrMore>
@@ -48,13 +34,54 @@
                     <ref name="element.measurement"/>
                     <ref name="element.quantity"/>
                     <ref name="element.timer"/>
+                    <ref name="element.unclear"/>
                 </choice>
             </zeroOrMore>
+        </element>
+    </define>
+    <define name="model.mixed_content">
+        <oneOrMore>
+            <choice>
+                <text/>
+                <ref name="element.abbr"/>
+                <ref name="element.author"/>
+                <ref name="element.emph"/>
+                <ref name="element.hi"/>
+                <ref name="element.foreign"/>
+                <ref name="element.date"/>
+                <ref name="element.list"/>
+                <ref name="element.title"/>
+                <ref name="element.exhibit"/>
+            </choice>
+        </oneOrMore>
+    </define>
+    <!-- these are formatting related elements -->
+    <define name="element.front">
+        <element name="front">
+            <text/>
+        </element>
+    </define>
+    <define name="element.caption">
+        <element name="caption">
+            <text/>
         </element>
     </define>
     <define name="element.title">
         <element name="title">
             <text/>
+        </element>
+    </define>
+    <define name="element.subheading">
+        <element name="subheading">
+            <text/>
+        </element>
+    </define>
+    <define name="element.p">
+        <element name="p">
+            <ref name="model.mixed_content"/>
+            <zeroOrMore>
+                <ref name="element.name"/>
+            </zeroOrMore>
         </element>
     </define>
     <define name="element.emph">
@@ -80,39 +107,36 @@
             </zeroOrMore>
         </element>
     </define>
-    <define name="element.p">
-        <element name="p">
-            <ref name="model.mixed_content"/>
+    <define name="element.back">
+        <element name="back">
+            <text/>
             <zeroOrMore>
-                <ref name="element.name"/>
+                <ref name="element.note"/>
             </zeroOrMore>
         </element>
     </define>
-    <define name="element.name">
-        <element name="name">
+    <define name="element.note">
+        <element name="note">
+            <text/>
+        </element>
+    </define>
+    <!-- these are content-rleated elements -->
+    <define name="element.abbr">
+        <element name="abbr">
+            <text/>
             <zeroOrMore>
-                <attribute name="type">
-                        <choice>
-                            <value>honorific</value>
-                            <value>first name</value>
-                            <value>surname</value>
-                            <value>alias</value>
-                            <value>enslaved name</value>
-                            <value>chosen name</value>
-                        </choice>
-                </attribute>
-            </zeroOrMore>
-            <optional>
-                <attribute name="target">
+                <attribute name="full">
                     <text/>
                 </attribute>
-            </optional>
-            <optional>
-                <attribute name="xml:id">
-                    <data type="ID"/>
-                </attribute>
-            </optional>
+            </zeroOrMore>
+        </element>
+    </define>
+    <define name="element.author">
+        <element name="author">
             <text/>
+            <optional>
+                <ref name="element.name"/>
+            </optional>
         </element>
     </define>
     <define name="element.date">
@@ -125,22 +149,14 @@
             </zeroOrMore>
         </element>
     </define>
-    <define name="element.abbr">
-        <element name="abbr">
+    <define name="element.exhibit">
+        <element name="exhibit">
             <text/>
-            <zeroOrMore>
-                <attribute name="full">
-                    <text/>
-                </attribute>
-            </zeroOrMore>
         </element>
     </define>
-    <define name="element.back">
-        <element name="back">
+    <define name="element.facsimile">
+        <element name="facsimile">
             <text/>
-            <zeroOrMore>
-                <ref name="element.note"/>
-            </zeroOrMore>
         </element>
     </define>
     <define name="element.foreign">
@@ -157,13 +173,6 @@
             </attribute>
         </element>
     </define>
-    <define name="element.list">
-        <element name="list">
-            <oneOrMore>
-                <ref name="element.item"/>
-            </oneOrMore>
-        </element>
-    </define>
     <define name="element.item">
         <element name="item">
             <text/>
@@ -172,19 +181,23 @@
             </attribute>
         </element>
     </define>
-    <define name="element.note">
-        <element name="note">
-            <text/>
+    <define name="element.list">
+        <element name="list">
+            <oneOrMore>
+                <ref name="element.item"/>
+            </oneOrMore>
         </element>
     </define>
-    <define name="element.front">
-        <element name="front">
+    <define name="element.location">
+        <element name="location">
             <text/>
-        </element>
-    </define>
-    <define name="element.subheading">
-        <element name="subheading">
-            <text/>
+            <attribute name="type">
+                <choice>
+                    <value>state</value>
+                    <value>city</value>
+                    <value>address</value>
+                </choice>
+            </attribute>
         </element>
     </define>
     <define name="element.measurement">
@@ -209,6 +222,38 @@
             </attribute>
         </element>
     </define>
+    <define name="element.name">
+        <element name="name">
+            <zeroOrMore>
+                <attribute name="type">
+                    <choice>
+                        <value>honorific</value>
+                        <value>first name</value>
+                        <value>surname</value>
+                        <value>alias</value>
+                        <value>enslaved name</value>
+                        <value>chosen name</value>
+                    </choice>
+                </attribute>
+            </zeroOrMore>
+            <optional>
+                <attribute name="target">
+                    <text/>
+                </attribute>
+            </optional>
+            <optional>
+                <attribute name="xml:id">
+                    <data type="ID"/>
+                </attribute>
+            </optional>
+            <text/>
+        </element>
+    </define>
+    <define name="element.orig">
+        <element name="orig">
+            <text/>
+        </element>
+    </define>
     <define name="element.quantity">
         <element name="quantity">
             <text/>
@@ -227,31 +272,16 @@
             </optional>
         </element>
     </define>
-    <define name="element.caption">
-        <element name="caption">
-            <text/>
-        </element>
-    </define>
-    <define name="element.facsimile">
-        <element name="facsimile">
-            <text/>
-        </element>
-    </define>
-    <define name="element.location">
-        <element name="location">
-            <text/>
-            <attribute name="type">
+    <define name="element.unclear">
+        <element name="unclear">
+            <empty/>
+            <attribute name="segment">
                 <choice>
-                    <value>state</value>
-                    <value>city</value>
-                    <value>address</value>
+                    <value>passage</value>
+                    <value>word</value>
+                    <value>partial word</value>
                 </choice>
             </attribute>
-        </element>
-    </define>
-    <define name="element.orig">
-        <element name="orig">
-            <text/>
         </element>
     </define>
 </grammar>

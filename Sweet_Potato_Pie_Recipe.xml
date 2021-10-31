@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="file:/C:/Users/Geoff/OneDrive/Documents/Roxanne%27s%20Stuff/test_repository/rbfaure_agt4_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <document>
-    <CCPheader> Author: Date: Title: </CCPheader>
+    <CCPheader>
+        <author>Abby Fisher</author>
+        <title>What Mrs. Fisher Knows About Southern Cooking</title>
+        <date>1881</date>
+        <exhibit>What Did They Eat? Where Did They Stay? Black Boardinghouses and the Colored
+            Conventions Movement</exhibit>
+    </CCPheader>
     <body>Sweet Potato Pie. <quantity amount="2">Two</quantity>
         <measurement units="lbs">pounds</measurement> of potatoes will make two pies. Boil the
         potatoes soft; peel and mash fine through a cullender while hot; <quantity amount="1"

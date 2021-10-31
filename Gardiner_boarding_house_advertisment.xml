@@ -2,7 +2,10 @@
 <?xml-model href="file:/C:/Users/Geoff/OneDrive/Documents/Roxanne%27s%20Stuff/test_repository/rbfaure_agt4_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <document>
     <CCPheader>
+        <author> Unknown, likely Serena Gardiner or Peter Gardiner</author>
+        <title>newspaper advertisement for Serena Gardiner's boarding house</title>
         <date>25 april 1835</date>
+        <exhibit>Black Women's Economic Power: Viualizing Domestic Spaces in the 1830s</exhibit>
     </CCPheader>
     <body><title>Genteel Private Boarding House.</title>
         <name type="honorific">Mrs. Serena Gardiner</name>, who formerly kept a private boarding-house at <location

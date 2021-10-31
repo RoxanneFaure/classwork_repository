@@ -1,15 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="file:/C:/Users/Geoff/OneDrive/Documents/Roxanne%27s%20Stuff/test_repository/rbfaure_agt4_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <document>
-    <CCPheader/>
+    <CCPheader>
+        <author>delegates of the 1835 Colored Convention</author>
+        <title>a card endorsing the boarding house of Serena Gardiner, published in the
+            Liberator</title>
+        <date>11 July 1835</date>
+        <exhibit>Black Women's Economic Power: Viualizing Domestic Spaces in the 1830s</exhibit>
+    </CCPheader>
     <body>A CARD. We, the undersigned, having availed ourselves during the session of the colored
-        Convention, held in <location type="city">Philadelphia</location>, <date>June, 1830,</date>
+        Convention, held in <location type="city">Philadelphia</location>, <date>June, 1835,</date>
         of <name>Mrs. Serena Gardiner</name>’s select boarding house, <location type="address">No.
-            35, Elisbaeth street</location>, are happy to say, that with its pleasant [??}ation, the
-        cleanliness of the apartments, the good order therein preserved, and its good [???] we were
-        highly pleased; and to persons of color visiting this city, who are prepared to appreciate
-        the above advantages, we freely recommend her house, as possessing superior inducements to
-        their patronage and support. <list>
+            35, Elisbaeth street</location>, are happy to say, that with its pleasant <unclear
+            segment="partial word"/>ation, the cleanliness of the apartments, the good order therein
+        preserved, and its good <unclear segment="word"/> we were highly pleased; and to persons of color visiting this
+        city, who are prepared to appreciate the above advantages, we freely recommend her house, as
+        possessing superior inducements to their patronage and support. <list>
             <item n="1">WM. P. POWELL, New Bedford.</item>
             <item n="2">DR. JAMES H. FLEET, District of Columbia.</item>
             <item n="3">AUGUSTUS PRICE, Washington, D.C.</item>
