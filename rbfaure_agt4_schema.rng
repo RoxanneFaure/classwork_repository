@@ -92,13 +92,14 @@
         <element name="name">
             <zeroOrMore>
                 <attribute name="type">
-                    <choice>
-                        <value>first name</value>
-                        <value>surname</value>
-                        <value>alias</value>
-                        <value>enslaved name</value>
-                        <value>chosen name</value>
-                    </choice>
+                        <choice>
+                            <value>honorific</value>
+                            <value>first name</value>
+                            <value>surname</value>
+                            <value>alias</value>
+                            <value>enslaved name</value>
+                            <value>chosen name</value>
+                        </choice>
                 </attribute>
             </zeroOrMore>
             <optional>
@@ -219,9 +220,11 @@
     <define name="element.timer">
         <element name="timer">
             <text/>
-            <attribute name="minutes">
-                <data type="positiveInteger"/>
-            </attribute>
+            <optional>
+                <attribute name="minutes">
+                    <data type="positiveInteger"/>
+                </attribute>
+            </optional>
         </element>
     </define>
     <define name="element.caption">
@@ -244,6 +247,11 @@
                     <value>address</value>
                 </choice>
             </attribute>
+        </element>
+    </define>
+    <define name="element.orig">
+        <element name="orig">
+            <text/>
         </element>
     </define>
 </grammar>

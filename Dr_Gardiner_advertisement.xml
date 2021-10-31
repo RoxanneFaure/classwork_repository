@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="file:/C:/Users/Geoff/OneDrive/Documents/Roxanne%27s%20Stuff/test_repository/rbfaure_agt4_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<document>
+    <CCPheader>
+        <title>newspaper advertisement for Dr. Gardiner, partial</title>
+        <date>unknown, some time before April 1835</date>
+    </CCPheader>
+    <body><name>Dr. Gardiner</name>, <location type="address">No. 19, Powel-street, between 5th and
+            6th streets, and between Pine &amp; Spruce</location>, <location type="city"
+            >PHILADELPHIA</location>, Grateful for the liberal patronage received, and soliciting a
+        continuance of same, offers his services and advice in all cases of disease, having been
+        successful in practice, and having a general experience in Medical Botany. He offers his
+        vegetable preparations to the public, viz. <list>
+            <item n="1">Lobelia, 1st, 2d and 3d preparations;</item>
+            <item n="2">Nos. 2, 3, 4, 5, and 6’ Slippery Elm Bark;</item>
+            <item n="3">Composition Powders;</item>
+            <item n="4">Nerve Powders;</item>
+            <item n="5">Cough Powders;</item>
+            <item n="6">Fever Powders;</item>
+            <item n="7">Tooth Powder;</item>
+            <item n="8">Vegetable Powder for headache;</item>
+            <item n="9">Cancer Salve, and others used for any kind of sores;</item>
+            <item n="10">Strengthening Plasters;</item>
+            <item n="11">Emetic Tincture;</item>
+            <item n="12">Vermifuge, very pleasant {?} the taste;</item>
+            <item n="13">Asthmatic Tincture;</item>
+            <item n="14">Red Liniment;</item>
+            <item n="15">Rheumatic Drops;</item>
+            <item n="16">Toothache Drops;</item>
+            <item n="17">Anti-Mercurial Syrup, which cures radically all diseases arising from
+                impurities of the blood, mercurial diseases, scrofula, &amp;c.;</item>
+            <item n="18">Dr. Gardiner’s Pulmonic Syrup for colds and coughs;</item>
+            <item n="19">with several Indian Preparations for consumption, rheumatism, &amp;c.
+                Th</item>
+        </list>
+    </body>
+</document>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="file:/C:/Users/Geoff/OneDrive/Documents/Roxanne%27s%20Stuff/test_repository/rbfaure_agt4_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<document>
+    <CCPheader/>
+    <body>A CARD. We, the undersigned, having availed ourselves during the session of the colored
+        Convention, held in <location type="city">Philadelphia</location>, <date>June, 1830,</date>
+        of <name>Mrs. Serena Gardiner</name>’s select boarding house, <location type="address">No.
+            35, Elisbaeth street</location>, are happy to say, that with its pleasant [??}ation, the
+        cleanliness of the apartments, the good order therein preserved, and its good [???] we were
+        highly pleased; and to persons of color visiting this city, who are prepared to appreciate
+        the above advantages, we freely recommend her house, as possessing superior inducements to
+        their patronage and support. <list>
+            <item n="1">WM. P. POWELL, New Bedford.</item>
+            <item n="2">DR. JAMES H. FLEET, District of Columbia.</item>
+            <item n="3">AUGUSTUS PRICE, Washington, D.C.</item>
+            <item n="4">JOHN F. COOK. do.[means ditto]</item>
+            <item n="5">HENRY OGDEN, Newark, N.J.</item>
+            <item n="6">JOHN D. CLUSSON do.</item>
+            <item n="7"> ALFRED [???], Providence, R.I.</item>
+            <item n="8">FRANCIS C. LIPPINS, [unclear]</item>
+            <item n="9">JUSTIN REYNOLDS, North Carolina</item>
+            <item n="10">CHARLES C. REMORD, Salem, Mass.</item>
+            <item n="11">NATHAN GILBERT, Providence, R.I.</item>
+            <item n="12">SAMUEL HARDENBURG, New York.</item>
+            <item n="13">WM. HAMILTON, do.</item>
+            <item n="14">WM. H. NOLAND, Washington, D.C.</item>
+            <item n="15">JOHN PECK, Carlisle, Pa.</item>
+            <item n="16">JOSEPH J. ROBERTS, Liberia W.A.</item>
+            <item n="17">WM. N. COMSTON, Petersburg, Va.</item>
+            <item n="18">WM. WHIPPER, Columbia, Pa.</item>
+            <item n="19">HENRY SCOTT, Worcester, Mass.</item>
+            <item n="20">WM. NICKINS, [??] of New-Orleans.</item>
+            <item n="21">THOMAS DAY, North Carolina</item>
+        </list>
+    </body>
+</document>

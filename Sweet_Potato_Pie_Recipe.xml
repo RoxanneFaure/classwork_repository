@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="file:/C:/Users/Geoff/OneDrive/Documents/Roxanne%27s%20Stuff/test_repository/rbfaure_agt4_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<document>
+    <CCPheader> Author: Date: Title: </CCPheader>
+    <body>Sweet Potato Pie. <quantity amount="2">Two</quantity>
+        <measurement units="lbs">pounds</measurement> of potatoes will make two pies. Boil the
+        potatoes soft; peel and mash fine through a cullender while hot; <quantity amount="1"
+            >one</quantity>
+        <measurement units="tablespoon">tablespoonful</measurement> of butter to be mashed in with
+        the potato. Take <quantity amount="5">five</quantity> eggs and beat the yells and whites
+        separate and add <quantity amount="1">one</quantity>
+        <measurement units="gill">gill</measurement> of milk; sweeten to taste; squeeze the juice of
+            <quantity amount="1">one</quantity> orange, and grate <quantity amount="0.5"
+            >one-half</quantity> of the peel into the liquid. <quantity amount="0.5">One
+            half</quantity>
+        <measurement units="teaspoon">teaspoonful</measurement> of salt in the potatoes. Have only
+            <quantity amount="1">one</quantity> crust and that at the bottom of the plate. Bake
+            <timer>quickly</timer>. </body>
+</document>
