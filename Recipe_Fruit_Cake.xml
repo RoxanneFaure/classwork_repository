@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="file:/C:/Users/Geoff/OneDrive/Documents/Roxanne%27s%20Stuff/test_repository/rbfaure_agt4_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<document>
+    <CCPheader>
+        <author>Abby Fisher</author>
+        <title>excerpt of What Mrs. Fisher knows About Cooking</title>
+        <date>1881</date>
+        <exhibit>What Did They Eat? Where Did They Stay? Black Boardinghouses and the Colored
+            Conventions Movement</exhibit>
+    </CCPheader>
+    <body>
+        <title>Fruit Cake.</title>
+        <quantity amount="1">One</quantity>
+        <measurement units="lbs">pound</measurement> of flour sifted and browned in stove, <quantity
+            amount="1">one</quantity>
+        <measurement units="lbs">pound</measurement> of citron sliced into very small pieces,
+        <quantity amount="1">one</quantity>
+        <measurement units="lbs">pound</measurement> of raisins cut in small pieces, <quantity
+            amount="1">one</quantity>
+        <measurement units="lbs">pound</measurement> of cur-rants well washed and dried with clean
+        towel, <quantity amount="1">one</quantity>
+        <measurement units="teacup">tea-cup</measurement> of almonds chopped fine, <quantity
+            amount="1">one</quantity>
+        <measurement units="tablespoon">tablespoonful</measurement> of powdered cinnamon, <quantity
+            amount="0.5">half</quantity> a <measurement units="teaspoon">teaspoonful</measurement>
+        of mace, <quantity amount="1">one</quantity>
+        <measurement units="tablespoon">tablespoonful</measurement> of allspice, <quantity
+            amount="0.5">half</quantity> a <measurement units="teaspoon">teaspoonful</measurement>
+        of ground cloves, <quantity amount="1">one</quantity>
+        <measurement units="pint">pint</measurement> of black molasses strained before using,
+        <quantity amount="1">one</quantity>
+        <measurement units="ounces">wineglass</measurement> of brandy, <quantity amount="1"
+            >one</quantity>
+        <measurement units="lbs">pound</measurement> of butter, <quantity amount="1">one</quantity>
+        <measurement units="lbs">pound</measurement> of sugar, <quantity amount="12">one
+            dozen</quantity> eggs. Beat whites and yelks separate, light, before adding to cake.
+    </body>
+</document>
